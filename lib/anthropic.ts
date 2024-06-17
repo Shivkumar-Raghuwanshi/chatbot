@@ -27,6 +27,7 @@ export const generateAnswer = async (question: string): Promise<string | null> =
     // Invoke the ChatAnthropic model and await its response
     const response = await chat.invoke(messages);
 
+    
     // Extract the content from the response
     const answer = response.content;
 
